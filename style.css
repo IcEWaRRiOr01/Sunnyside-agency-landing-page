@@ -1,0 +1,875 @@
+/* Colors */
+:root {
+    /* Primary */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
+    --dark-blue: hsl(198, 62%, 26%); /* photography text */
+    --dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+
+    /* Neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    /* #6fcefe */
+}
+
+body {
+    font-size: 18px;
+
+    /* Barlow */
+    /* font-family: 'Barlow', sans-serif; */
+    /* font-weight: 600; */
+
+    /* Fraunces */
+    /* font-family: 'Fraunces', serif; */
+    /* font-weight: 700, 900; */
+}
+
+.logo-wrapper {
+    width: 50vw;
+    height: 16vw;
+}
+
+.logo {
+    margin-left: 6vw;
+    margin-top: 8.5vw;
+    width: 33.6vw;
+}
+
+.menu-wrapper {
+    width: 50vw;
+    height: 16vw;
+    margin-left: 50vw;
+    margin-top: -16vw;
+}
+
+.menu-button {
+    margin-left: 35.5vw;
+    margin-top: 6.6vw;
+    width: 10vw;
+    height: 10vw;
+    border: none;
+}
+
+.menu-icon {
+    width: 6.5vw;
+}
+
+.menu-list {
+    display: block;
+    list-style: none;
+    margin-top: 12.2vw;
+    margin-left: 5.8vw;
+    width: 87.7vw;
+    height: 81.3vw;
+    padding-top: 4vw;
+    background-color: var(--white);
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+.menu-list::after {
+    content: '';
+    position: absolute;
+    border: 3.3vw solid transparent;
+    border-right: 3.5vw solid var(--white);
+    border-bottom: 3.5vw solid var(--white);
+    top: -6.8vw;
+    left: 80.9vw;
+}
+
+.menu-item {
+    display: block;
+    margin-left: -8vw;
+    margin-top: 3.7vw;
+    width: 87vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+    font-size: 5.3vw;
+    color: var(--very-dark-grayish-blue);
+}
+
+.contact {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5.7vw;
+    padding-top: 4.5vw;
+    padding-bottom: 4.5vw;
+    font-size: 4vw;
+    width: 37.6vw;
+    margin-left: 16.5vw;
+    margin-right: 16.5vw;
+    border-radius: 8vw;
+    background-color: var(--yellow);
+    color: black;
+}
+
+.about, .services, .projects {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.header {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 11vw;
+    text-align: center;
+    margin-top: 23vw;
+    line-height: 13vw;
+    letter-spacing: 1.5vw;
+    color: var(--white);
+}
+
+.main-header {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 143.5vw;
+}
+
+.arrow {
+    display: block;
+    margin-left: 45.45vw;
+    margin-top: 13vw;
+    width: 9.6vw;
+}
+
+.image-egg-wrapper, .image-egg {
+    width: 100vw;
+    height: 83.5vw;
+}
+
+.transform {
+    width: 100vw;
+    height: 116.3vw;
+    padding-top: 16.2vw;
+    background-color: var(--white);
+}
+
+.article-header {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 8.5vw;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: black;
+    line-height: 11vw;
+}
+
+.transform-description {
+    margin-top: 6.5vw;
+    text-align: center;
+    font-size: 4.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    line-height: 8vw;
+    color: var(--very-dark-grayish-blue);
+}
+
+.learnmore {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4.4vw;
+    margin-top: 8vw;
+    color: black;
+    width: 35vw;
+}
+
+.learnmore:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-underline {
+    background-color: #fdf3b6;
+    display: block;
+    width: 35vw;
+    height: 1.8vw;
+    margin-top: -1.6vw;
+    border-radius: 5vw;
+}
+
+.transform-learnmore:active .transform-underline {
+    background-color: var(--yellow);
+}
+
+.standout {
+    height: 199.5vw;
+    background-color: var(--white);
+}
+
+.standout-image {
+    width: 100vw;
+    height: 83vw;
+}
+
+.standout-header {
+    margin-top: 17vw; 
+}
+
+.standout-description {
+    margin-top: 5.5vw;
+    text-align: center;
+    font-size: 4.5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    line-height: 8vw;
+    color: var(--very-dark-grayish-blue);
+}
+
+.standout-underline {
+    background-color: #fedad1;
+}
+
+.standout-learnmore:active .standout-underline {
+    background-color: var(--soft-red);
+}
+
+.graphic-design {
+    width: 100vw;
+    height: 160vw;
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105vw;
+}
+
+.onpicture-header {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 7.5vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.onpicture-description {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    margin-top: 6.5vw;
+    text-align: center;
+    font-size: 4.2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    line-height: 7.2vw;
+}
+
+.graphic-design-header {
+    color: var(--dark-desaturated-cyan);
+    
+}
+
+.graphic-design-description {
+    color: var(--dark-desaturated-cyan);
+}
+
+.photography {
+    width: 100vw;
+    height: 160vw;
+    background-image: url(./images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105vw;
+}
+
+.photography-header {
+    color: var(--dark-blue);
+    padding-right: 3vw;
+}
+
+.photography-description {
+    color: var(--dark-blue);
+}
+
+.testimonials {
+    width: 100vw;
+    height: 335.5vw;
+    padding-top: 16.6vw;
+    
+    background-color: var(--white);
+}
+
+.testimonials-header {
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--grayish-blue);
+    font-size: 4.5vw;
+    text-align: center;
+    word-spacing: 1vw;
+    letter-spacing: 1vw;
+}
+
+.testimonial-wrapper {
+    width: 100vw;
+    height: 100vw;
+}
+
+.emily-testimonial-wrapper {
+    padding-top: 16.4vw;
+}
+
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19vw;
+    height: 19vw;
+    border-radius: 10vw;
+}
+
+.testimonial-text {
+    margin-top: 9.3vw;
+    text-align: center;
+    line-height: 8.5vw;
+    color: var(--very-dark-grayish-blue);
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-size: 4.5vw;
+}
+
+.username {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-align: center;
+    font-weight: 5vw;
+    margin-top: 8vw;
+    color: black;
+}
+
+.status {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3.7vw;
+    margin-top: 2vw;
+    color: var(--grayish-blue);
+}
+
+.thomas-testimonial-wrapper {
+    padding-top: 10.3vw;
+}
+
+.jennie-testimonial-wrapper {
+    padding-top: 12.8vw;
+}
+
+.gallery-wrapper {
+    width: 100vw;
+    height: 100vw;
+}
+
+.gallery-wrapper img {
+    float: left;
+    width: 50%;
+}
+
+.gallery-wrapper-desktop {
+    display: none;
+}
+
+.footer {
+    width: 100vw;
+    padding-top: 17.2vw;
+    padding-bottom: 16vw;
+    background-color: #90d4c5;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: 25.5vw;
+    margin-left: 25.5vw;
+    width: 45.5vw;
+}
+
+.footer-links {
+    margin-top: 10.4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-link {
+    color: #2C7566;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 4.7vw;
+}
+
+.footer-link:hover, .footer-link:active {
+    text-decoration: none;
+    color: var(--white);
+    border: none;
+}
+
+.footer-about {
+    margin-left: 2.5vw;
+}
+
+.footer-projects {
+    margin-right: 2.5vw;
+}
+
+.socials-wrapper {
+    margin-top: 22.3vw;
+}
+
+.social {
+    width: 5vw;
+    height: 5vw;
+}
+
+.facebook {
+    margin-left: 28vw;
+}
+
+.instagram {
+    margin-left: 6.7vw;
+}
+
+.twitter {
+    margin-left: 6.5vw;
+}
+
+.pinterest {
+    margin-left: 6.8vw;
+}
+
+.attribution { 
+    font-size: 3.3vw; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(./design/desktop-design.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .logo-wrapper {
+        width: 14.8vw;
+        height: 5.6vw;
+    }
+    
+    .logo {
+        margin-left: 2.8vw;
+        margin-top: 3.2vw;
+        width: 11.7vw;
+    }
+
+    .menu-wrapper {
+        display: none;
+    }
+    
+    .menu-list {
+        margin-top: -4vw;
+        margin-left: 0vw;
+        width: 37vw;
+        height: 5.5vw;
+        padding-top: 0vw;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+    }
+
+    .menu-list::after {
+        display: none;
+    }
+    
+    .menu-item {
+        margin-left: 0vw;
+        margin-top: 1.8vw;
+        width: 4.8vw;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        text-align: left;
+        font-size: 1.24vw;
+        color: var(--white);
+    }
+
+    .menu-item:hover {
+        cursor: pointer;
+    }
+
+    .services {
+        margin-left: 6.9vw;
+        margin-top: -1.85vw;
+    }
+
+    .projects {
+        margin-left: 14.9vw;
+        margin-top: -1.9vw;
+    }
+    
+    .contact {
+        margin-top: -2.9vw;
+        padding-top: 1.15vw;
+        padding-bottom: 1.15vw;
+        font-size: 1.1vw;
+        width: 9.7vw;
+        margin-left: 22.7vw;
+        text-align: center;
+        margin-right: 0vw;
+        border-radius: 8vw;
+        background-color: var(--white);
+        color: black;
+    }
+
+    .contact:hover {
+        background-color: #6cd0fe;
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    .about, .services, .projects {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+    }
+
+    .header {
+        font-size: 3.9vw;
+        margin-top: 3.8vw;
+        line-height: 13vw;
+        letter-spacing: 0.57vw;
+        color: var(--white);
+    }
+    
+    .main-header {
+        background-image: url(./images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55.6vw;
+    }
+    
+    .arrow {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.4vw;
+        width: 2.5vw;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    .image-egg-wrapper, .image-egg {
+        width: 49vw;
+        height: 41.6vw;
+        margin-left: auto;
+    }
+
+    .transform {
+        width: 49.9vw;
+        height: 41.6vw;
+        padding-top: 11vw;
+        margin-top: -41.6vw;
+        background-color: var(--white);
+    }
+    
+    .article-header {
+        font-weight: 900;
+        font-size: 2.7vw;
+        padding-left: 11.5vw;
+        padding-right: 7vw;
+        line-height: normal;
+        text-align: left;
+    }
+    
+    .transform-description {
+        margin-top: 2.3vw;
+        text-align: left;
+        font-size: 1.15vw;
+        padding-left: 11.5vw;
+        padding-right: 8vw;
+        line-height: 2.1vw;
+        color: var(--very-dark-grayish-blue);
+    }
+    
+    .learnmore {
+        margin-left: 11.7vw;
+        margin-right: 0vw;
+        font-size: 1.15vw;
+        margin-top: 2.75vw;
+        width: 9vw;
+    }
+    
+    .learnmore:hover {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .custom-underline {
+        width: 9.1vw;
+        height: 0.6vw;
+        margin-top: -0.6vw;
+        border-radius: 5vw;
+    }
+    
+    .transform-learnmore:hover .transform-underline {
+        background-color: var(--yellow);
+    }
+
+    .standout {
+        height: 41.6vw;
+    }
+    
+    .standout-image {
+        width: 50vw;
+        height: 41.5vw;
+    }
+    
+    .standout-header {
+        margin-top: -30.5vw;
+        margin-left: 46.35vw; 
+    }
+    
+    .standout-description {
+        margin-top: 2.5vw;
+        text-align: left;
+        font-size: 1.18vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        line-height: 2vw;
+        margin-left: 57.7vw;
+        margin-right: 10vw;
+    }
+
+    .standout-learnmore {
+        margin-left: 57.8vw;
+    }
+    
+    .standout-learnmore:hover .standout-underline {
+        background-color: var(--soft-red);
+    }
+
+    .graphic-design {
+        width: 50vw;
+        height: 41.5vw;
+        padding-top: 27.5vw;
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+    
+    .onpicture-header {
+        font-size: 1.95vw;
+    }
+    
+    .onpicture-description {
+        font-size: 1.25vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        line-height: 1.8vw;
+        margin-top: 1.8vw;
+        width: 26vw;
+        margin-left: 12.2vw;
+    }
+
+    .photography {
+        width: 49vw;
+        height: 41.5vw;
+        background-image: url(./images/desktop/image-photography.jpg);
+        padding-top: 27.5vw;
+        margin-left: auto;
+        margin-top: -41.4vw;
+    }
+    
+    .photography-header {
+        padding-right: 0vw;
+        padding-left: 1vw;
+    }
+
+    .testimonials {
+        width: 100vw;
+        height: 54.1vw;
+        padding-top: 11.2vw;
+        background-color: var(--white);
+    }
+    
+    .testimonials-header {
+        font-size: 1.4vw;
+        letter-spacing: 0.37vw;
+        word-spacing: normal;
+    }
+    
+    .testimonial-wrapper {
+        width: 25vw;
+        height: 30vw;
+        padding-top: 5.3vw;
+    }
+    
+    .emily-testimonial-wrapper {
+        margin-top: 0vw;
+        margin-left: 11.15vw;
+    }
+    
+    .avatar {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .testimonial-text {
+        margin-top: 4.1vw;
+        line-height: 2.25vw;
+        color: var(--very-dark-grayish-blue);
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1.15vw;
+    }
+    
+    .username {
+        margin-top: 4.65vw;
+    }
+    
+    .status {
+        font-size: 1vw;
+        margin-top: 0.4vw;
+    }
+    
+    .thomas-testimonial-wrapper {
+        margin-left: 37.5vw;
+        margin-top: -30vw;
+    }
+    
+    .jennie-testimonial-wrapper {
+        margin-left: 63.9vw;
+        margin-top: -30vw;
+    }
+
+    .gallery-wrapper {
+        display: none;
+    }
+
+    .gallery-wrapper-desktop {
+        display: block;
+        width: 100vw;
+        height: 31vw;
+    }
+
+    .gallery-img-desktop {
+        width: 25vw;
+        height: 31vw;
+        float: left;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer {
+        padding-top: 5.05vw;
+        padding-bottom: 5vw;
+    }
+    
+    .footer-logo {
+        margin-left: 43.7vw;
+        width: 11.83vw;
+    }
+    
+    .footer-links {
+        width: 29.7vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.7vw;
+    }
+    
+    .footer-link {
+        font-size: 1.26vw;
+    }
+    
+    .footer-link:hover, .footer-link:active {
+        text-decoration: none;
+        color: var(--white);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .socials-wrapper {
+        margin-top: 6vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .social {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .social:hover {
+        cursor: pointer;
+    }
+    
+    .facebook {
+        margin-left: 0vw;
+    }
+    
+    .instagram {
+        margin-left: 0vw;
+    }
+    
+    .twitter {
+        margin-left: 0vw;
+    }
+    
+    .pinterest {
+        margin-left: 0vw;
+    }
+    
+    .attribution { 
+        font-size: 2vw;
+        text-align: center; 
+    }
+    
+}
